@@ -85,3 +85,28 @@ Ces coûts seront affinés au fur et à mesure de l'avancement du projet.
 ### 7. Conclusion
 
 Le projet "ABRI_DU_COEUR" vise à offrir une solution Web complète pour la gestion des adoptions animales et des produits connexes. Les fonctionnalités détaillées dans ce cahier des charges permettront de répondre aux besoins des utilisateurs et des administrateurs, tout en respectant les exigences techniques et de sécurité. Ce document servira de guide pour la mise en œuvre du projet et la coordination entre toutes les parties prenantes.
+
+------------------------------
+# Fonctionnalités Détaillées !!!
+# Système d'Administration
+- Gestion des animaux (CRUD)
+- Gestion des produits (CRUD)
+- Gestion des utilisateurs
+- Tableau de bord avec statistiques
+- Gestion des rendez-vous
+- Gestion des adoptions
+
+Interface Utilisateur
+- Catalogue des animaux
+- Boutique en ligne
+- Système de panier
+- Profil utilisateur
+- Historique des commandes
+- Prise de rendez-vous
+
+Système de Boutique
+- Catalogue produits
+- Panier d'achat
+- Processus de commande
+- Paiement sécurisé
+- Suivi de commande
