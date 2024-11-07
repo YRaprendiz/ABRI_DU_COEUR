@@ -1,0 +1,76 @@
+-- Création de la table Utilisateur
+CREATE TABLE Utilisateur (
+    id_utilisateur INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
+    mot_de_passe VARCHAR(255),
+    role ENUM('admin', 'client') DEFAULT 'client',
+    adresse VARCHAR(255)
+);
+
+-- Création de la table Produit
+CREATE TABLE Produit (
+    id_produit INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(100),
+    description TEXT,
+    prix DECIMAL(10, 2),
+    categorie VARCHAR(50),
+    stock INT
+);
+
+-- Création de la table Animal
+CREATE TABLE Animal (
+    id_animal INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(100),
+    type ENUM('chien', 'chat'),
+    age INT,
+    etat_sante VARCHAR(100),
+    description TEXT
+);
+
+-- Création de la table Panier
+CREATE TABLE Panier (
+    id_panier INT AUTO_INCREMENT PRIMARY KEY,
+    id_utilisateur INT,
+    date_creation DATE,
+    FOREIGN KEY (id_utilisateur) REFERENCES Utilisateur(id_utilisateur)
+);
+
+-- Création de la table Commande
+CREATE TABLE Commande (
+    id_commande INT AUTO_INCREMENT PRIMARY KEY,
+    id_utilisateur INT,
+    date_commande DATE,
+    statut ENUM('en_attente', 'validée', 'expédiée', 'livrée') DEFAULT 'en_attente',
+    total DECIMAL(10, 2),
+    FOREIGN KEY (id_utilisateur) REFERENCES Utilisateur(id_utilisateur)
+);
+
+-- Création de la table RendezVous
+CREATE TABLE RendezVous (
+    id_rendezvous INT AUTO_INCREMENT PRIMARY KEY,
+    id_utilisateur INT,
+    date_rendezvous DATE,
+    type ENUM('adoption', 'don'),
+    statut ENUM('confirmé', 'en_attente', 'annulé') DEFAULT 'en_attente',
+    FOREIGN KEY (id_utilisateur) REFERENCES Utilisateur(id_utilisateur)
+);
+
+-- Création de la table Questionnaire
+CREATE TABLE Questionnaire (
+    id_questionnaire INT AUTO_INCREMENT PRIMARY KEY,
+    questions TEXT,
+    reponses TEXT,
+    id_utilisateur INT,
+    FOREIGN KEY (id_utilisateur) REFERENCES Utilisateur(id_utilisateur)
+);
+
+-- Création de la table pour relier les produits au panier
+CREATE TABLE Panier_Produit (
+    id_panier INT,
+    id_produit INT,
+    quantite INT,
+    PRIMARY KEY (id_panier, id_produit),
+    FOREIGN KEY (id_panier) REFERENCES Panier(id_panier),
+    FOREIGN KEY (id_produit) REFERENCES Produit(id_produit)
+);
