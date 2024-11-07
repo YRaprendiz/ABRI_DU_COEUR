@@ -1,2 +1,86 @@
 # ABRI_DU_COEUR
  PPE_FINAL Gupe
+# Chaier du charge
+Voici le cahier des charges revu et amélioré selon les suggestions :
+
+## Cahier des charges du projet "Projectx"
+
+### 1. Contexte et objectif du projet
+
+Le projet "Projectx" vise à créer une plateforme Web conviviale permettant aux utilisateurs de gérer facilement l'adoption d'animaux et l'achat de produits connexes. Cette solution offrira aux utilisateurs la possibilité de consulter et d'interagir avec des animaux à adopter, de commander des produits liés aux soins des animaux, et de réaliser des transactions en toute simplicité.
+
+### 2. Fonctionnalités utilisateur
+
+#### 2.1 Gestion du compte utilisateur
+- Inscription, connexion et gestion du profil utilisateur (informations personnelles, adresse, etc.)
+- Suivi des commandes passées et de leur état d'avancement
+
+#### 2.2 Catalogue des produits
+- Consultation et recherche dans le catalogue des produits (animaux, accessoires, nourriture, etc.)
+- Ajout de produits au panier d'achat
+
+#### 2.3 Gestion des animaux
+- Visualisation des animaux disponibles pour l'adoption
+- Prise de rendez-vous pour adopter ou donner un animal
+- Suivi de l'état des rendez-vous (confirmé, en attente, annulé)
+
+#### 2.4 Panier et commandes
+- Ajout, modification et suppression de produits dans le panier
+- Passation de commande avec un récapitulatif de l'achat
+
+#### 2.5 Rendez-vous et questionnaires
+- Réponse à un questionnaire pré-adoption pour les futurs propriétaires
+- Consultation de l'historique des rendez-vous
+
+### 3. Fonctionnalités d'administration
+
+#### 3.1 Gestion des produits
+- Ajout, modification et suppression de produits (animaux, accessoires, etc.)
+- Mise à jour des informations produits (nom, description, prix, stock, etc.)
+
+#### 3.2 Gestion des animaux
+- Ajout, modification et suppression d'animaux disponibles à l'adoption
+- Suivi des rendez-vous liés aux animaux
+
+#### 3.3 Gestion des utilisateurs
+- Consultation et modification des informations des utilisateurs
+- Accès aux commandes et rendez-vous des utilisateurs
+
+### 4. Exigences techniques
+
+#### 4.1 Technologies web
+- Backend : PHP, respectant l'architecture MVC (Modèle-Vue-Contrôleur)
+- Frontend : HTML, CSS, JavaScript
+- Base de données : MySQL
+
+#### 4.2 Architecture
+- Hébergement sur un serveur compatible (par exemple : IONOS)
+- Découpage en modules et composants réutilisables
+
+#### 4.3 Sécurité
+- Stockage sécurisé des mots de passe des utilisateurs (hachage)
+- Protection contre les attaques de type XSS et CSRF
+
+### 5. Planning prévisionnel
+
+| Phase                 | Durée estimée | Description |
+|----------------------|---------------|-------------|
+| Analyse et conception | 1 semaine     | Définition des entités, des schémas de données, et des fonctionnalités |
+| Développement backend  | 2 semaines    | Implémentation du modèle MVC, création des bases de données, et gestion des utilisateurs |
+| Développement frontend | 2 semaines    | Conception des interfaces utilisateurs et intégration avec le backend |
+| Tests et ajustements   | 1 semaine     | Tests unitaires, corrections de bugs, et optimisations |
+| Livraison finale       | 1 semaine     | Mise en production et documentation technique |
+
+### 6. Estimation des coûts
+
+Le coût du projet est estimé comme suit :
+
+- Développement (160 heures)
+- Hébergement sur IONOS
+- Maintenance et support après livraison (option)
+
+Ces coûts seront affinés au fur et à mesure de l'avancement du projet.
+
+### 7. Conclusion
+
+Le projet "Projectx" vise à offrir une solution Web complète pour la gestion des adoptions animales et des produits connexes. Les fonctionnalités détaillées dans ce cahier des charges permettront de répondre aux besoins des utilisateurs et des administrateurs, tout en respectant les exigences techniques et de sécurité.
