@@ -110,3 +110,42 @@ Système de Boutique
 - Processus de commande
 - Paiement sécurisé
 - Suivi de commande
+------------------------------
+@startuml
+left to right direction
+
+Actor Visitor
+Actor RegisteredUser
+Actor Admin
+
+UseCaseMap "ABRI_DU_COEUR" {
+  UseCase "Consulter le catalogue"
+  UseCase "S'inscrire"
+  UseCase "Se connecter"
+  UseCase "Gérer son profil"
+  UseCase "Passer une commande"
+  UseCase "Suivre l'état d'une commande"
+  UseCase "Visualiser les animaux"
+  UseCase "Prendre un rendez-vous"
+  UseCase "Répondre au questionnaire pré-adoption"
+  UseCase "Gérer les produits" << Admin >>
+  UseCase "Gérer les animaux" << Admin >>
+  UseCase "Gérer les utilisateurs" << Admin >>
+}
+
+Visitor --> "Consulter le catalogue"
+Visitor --> "S'inscrire"
+
+RegisteredUser .> "Se connecter" : extends
+RegisteredUser --> "Gérer son profil"
+RegisteredUser --> "Passer une commande"
+RegisteredUser --> "Suivre l'état d'une commande"
+RegisteredUser --> "Visualiser les animaux"
+RegisteredUser --> "Prendre un rendez-vous"
+RegisteredUser --> "Répondre au questionnaire pré-adoption"
+
+Admin --> "Gérer les produits"
+Admin --> "Gérer les animaux" 
+Admin --> "Gérer les utilisateurs"
+
+@enduml
