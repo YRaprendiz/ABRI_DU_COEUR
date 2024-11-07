@@ -1,8 +1,5 @@
 # ABRI_DU_COEUR
  PPE_FINAL Gupe
-# Chaier du charge
-Voici le cahier des charges revu et amélioré selon les suggestions :
-
 ## Cahier des charges du projet "Projectx"
 
 ### 1. Contexte et objectif du projet
@@ -23,13 +20,15 @@ Le projet "Projectx" vise à créer une plateforme Web conviviale permettant aux
 - Visualisation des animaux disponibles pour l'adoption
 - Prise de rendez-vous pour adopter ou donner un animal
 - Suivi de l'état des rendez-vous (confirmé, en attente, annulé)
+- Réponse à un questionnaire pré-adoption pour les futurs propriétaires
 
 #### 2.4 Panier et commandes
 - Ajout, modification et suppression de produits dans le panier
 - Passation de commande avec un récapitulatif de l'achat
+- Consultation de l'historique des commandes
 
-#### 2.5 Rendez-vous et questionnaires
-- Réponse à un questionnaire pré-adoption pour les futurs propriétaires
+#### 2.5 Rendez-vous
+- Prise de rendez-vous pour adopter ou donner un animal
 - Consultation de l'historique des rendez-vous
 
 ### 3. Fonctionnalités d'administration
@@ -56,31 +55,33 @@ Le projet "Projectx" vise à créer une plateforme Web conviviale permettant aux
 #### 4.2 Architecture
 - Hébergement sur un serveur compatible (par exemple : IONOS)
 - Découpage en modules et composants réutilisables
+- Mise en place d'une architecture scalable et évolutive
 
 #### 4.3 Sécurité
 - Stockage sécurisé des mots de passe des utilisateurs (hachage)
 - Protection contre les attaques de type XSS et CSRF
+- Respect des meilleures pratiques de sécurité Web
 
 ### 5. Planning prévisionnel
 
 | Phase                 | Durée estimée | Description |
 |----------------------|---------------|-------------|
-| Analyse et conception | 1 semaine     | Définition des entités, des schémas de données, et des fonctionnalités |
-| Développement backend  | 2 semaines    | Implémentation du modèle MVC, création des bases de données, et gestion des utilisateurs |
-| Développement frontend | 2 semaines    | Conception des interfaces utilisateurs et intégration avec le backend |
-| Tests et ajustements   | 1 semaine     | Tests unitaires, corrections de bugs, et optimisations |
-| Livraison finale       | 1 semaine     | Mise en production et documentation technique |
+| Analyse et conception | 2 semaines    | Définition détaillée des exigences, des schémas de données, et des fonctionnalités |
+| Développement backend  | 3 semaines    | Implémentation du modèle MVC, création des bases de données, et gestion des utilisateurs |
+| Développement frontend | 3 semaines    | Conception des interfaces utilisateurs et intégration avec le backend |
+| Tests et ajustements   | 2 semaines    | Tests unitaires, d'intégration et de performance, corrections de bugs, et optimisations |
+| Déploiement et livraison| 1 semaine    | Mise en production, documentation technique, et formation des équipes |
 
 ### 6. Estimation des coûts
 
 Le coût du projet est estimé comme suit :
 
-- Développement (160 heures)
-- Hébergement sur IONOS
-- Maintenance et support après livraison (option)
+- Développement (environ 280 heures)
+- Hébergement sur IONOS (environ 50 € par mois)
+- Maintenance et support après livraison (environ 20 heures par mois)
 
 Ces coûts seront affinés au fur et à mesure de l'avancement du projet.
 
 ### 7. Conclusion
 
-Le projet "Projectx" vise à offrir une solution Web complète pour la gestion des adoptions animales et des produits connexes. Les fonctionnalités détaillées dans ce cahier des charges permettront de répondre aux besoins des utilisateurs et des administrateurs, tout en respectant les exigences techniques et de sécurité.
+Le projet "Projectx" vise à offrir une solution Web complète pour la gestion des adoptions animales et des produits connexes. Les fonctionnalités détaillées dans ce cahier des charges permettront de répondre aux besoins des utilisateurs et des administrateurs, tout en respectant les exigences techniques et de sécurité. Ce document servira de guide pour la mise en œuvre du projet et la coordination entre toutes les parties prenantes.
